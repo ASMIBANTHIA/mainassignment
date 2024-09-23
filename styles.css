@@ -639,6 +639,9 @@
   .div-37,.div-39{
     width: auto !important;
   }
+  .div-39{
+    align-self: center !important;
+  }
   .building-a-greener-world
   {
     margin-left: 0px !important;
