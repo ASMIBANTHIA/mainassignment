@@ -234,7 +234,21 @@
     font-size: 40px !important;
   }
 }
-
+.close-btn {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  
+}
+.hamburger-line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #252b42;
+  margin-bottom: 5px;
+}
 .div-100 {
   margin-top: -40px;
 }
@@ -881,6 +895,8 @@
   align-self: start;
   font: 800 50px Plus Jakarta Sans, -apple-system, Roboto, Helvetica,
     sans-serif;
+    justify-content: center;
+    display: flex;
 }
 
 @media (max-width: 991px) {

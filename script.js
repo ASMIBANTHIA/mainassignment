@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Number animation logic
     const toggleButton = document.querySelector('.toggle-button');
-const navItems = document.querySelector('.nav-items.mobile');
-
-toggleButton.addEventListener('click', () => {
-  navItems.classList.toggle('show');
-});
+    const navItems = document.querySelector('.nav-items.mobile');
+    const hamburgerLines = document.querySelectorAll('.hamburger-line');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    toggleButton.addEventListener('click', () => {
+      navItems.classList.toggle('show');
+      hamburgerLines.forEach(line => line.style.display = navItems.classList.contains('show') ? 'none' : 'block');
+      closeBtn.style.display = navItems.classList.contains('show') ? 'block' : 'none';
+    });
     const numbers = document.querySelectorAll('.number');
 
     const animateNumber = (numberElement, target) => {
